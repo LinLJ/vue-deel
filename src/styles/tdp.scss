@@ -1,0 +1,7 @@
+@import '~@tdp/theme/src/index.scss';
+@import '~@tdp/common/src/index.scss';
+// 表单设计器样式
+@import '~@tdp/quasar-components/styles/quasar-components.scss';
+
+// 插入业务模块依赖样式文件, 保持在最后由脚手架安装业务模块时写入
+@import '~@tdp/system-org-selector/src/index.scss';

@@ -1,0 +1,53 @@
+.card {
+  max-width: 800px;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.3);
+
+  .card__left {
+    background: linear-gradient(0deg, #3a485a 0%, #607089 100%);
+
+    .card__leftImg {
+      width: 100%;
+      height: 100%;
+      background: url('../../../../static/img/login-left-img.png') no-repeat;
+      padding: 60px 60px 40px;
+    }
+
+    .card__leftSeparator {
+      width: 100%;
+      height: 1px;
+      background: #ffffff;
+      margin-top: 24px;
+    }
+  }
+
+  .card__right {
+    padding: 24px 55px 20px;
+
+    .card__rightLine {
+      height: 1px;
+      background: #f1f1f1;
+      flex: 1;
+    }
+
+    .card__rightOther {
+      color: #8c92a4;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.tab__panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-validator-code {
+  display: block;
+  width: 108px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 4px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}

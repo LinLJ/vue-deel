@@ -1,0 +1,26 @@
+{
+  "app": {
+    "name": "极易数据湖",
+    "ename": "DEVELOPMENT PLATFORM",
+    "copyright": "Copyright",
+    "company": ""
+  },
+  "layout": {
+    "navMode": "both",
+    "view": "hHr LpR lfr"
+  },
+  "api": {
+    "server": "http://192.168.58.112:8991/adminapi",
+    "VUE_APP_OAUTH_userAuthorizationUri": "http://192.168.58.112:8190/oauth/authorize",
+    "VUE_APP_OAUTH_clientId": "datalake",
+    "VUE_APP_OAUTH_client_secret": "Datalake@2022",
+    "VUE_APP_OAUTH_response_type": "code",
+    "VUE_APP_OAUTH_scope": "user_info",
+    "VUE_APP_OAUTH_state": "",
+    "VUE_APP_OAUTH_redirect_uri": "http://192.168.58.112:8991/ssologin",
+    "VUE_APP_OAUTH_grant_type": "authorization_code",
+    "VUE_APP_OAUTH_accessTokenUri": "http://192.168.58.112:8190/oauth/token",
+    "VUE_APP_OAUTH_userInfoUri": "http://192.168.58.112:8190/me",
+    "VUE_APP_OAUTH_logoutUri": "http://192.168.58.112:8190/oauth/logout"
+  }
+}

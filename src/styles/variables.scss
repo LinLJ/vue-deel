@@ -1,0 +1,50 @@
+/**
+ * 全局公用变量
+ * import by `vue.config.js` for all `*.scss` files 
+ */
+
+/* ------------ quasar -------------- */
+@import './quasar.variables.scss';
+/* ------------- end ---------------- */
+
+/* ------------- tdp ---------------- */
+
+//#region: 重置 tdp 内置变量
+
+//#endregion
+
+@import '~@tdp/theme/src/var.scss';
+@import '~@tdp/common/src/var.scss';
+
+/* ------------- end ---------------- */
+
+/* ------------ 添加变量 ------------- */
+
+$app-prefix: app;
+
+//#region: base
+
+// 图标库, 多个库以 `,` 拼接
+$app-icon-sets: material-icons,material-icons-outlined;
+
+// 渐变背景
+$app-bg-color-gradual: linear-gradient(-135deg, #ff6b45, #308dec);
+// 渐变背景透明
+$app-bg-color-gradual-opacity: linear-gradient(-135deg, rgba(0, 111, 121, 0.8), rgba(29, 29, 190, 0.8));
+
+//#endregion
+
+/* -------------- end -------------- */
+
+/* ------------ 导出变量 ------------ */
+
+:export {
+  appPrefix: $app-prefix;
+  primaryColor: $primary;
+  darkColor: $dark;
+
+  // 供图标选择器使用
+  iconSets: $app-icon-sets;
+}
+
+/* -------------- end -------------- */

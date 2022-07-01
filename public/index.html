@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <base href="<%=VUE_APP_PUBLIC_PATH%>" />
+    <link rel="icon" href="<%=VUE_APP_PUBLIC_PATH%>favicon.ico" />
+    <title><%= VUE_APP_TITLE %></title>
+    <style>
+      .app-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #308dec;
+        z-index: 9999;
+        -webkit-transition: all 0.65s;
+        transition: all 0.65s;
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+      .app-preloader-hidden-add {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      .app-preloader-hidden-add-active {
+        opacity: 0;
+      }
+
+      .app-preloader-hidden {
+        display: none !important;
+      }
+
+      .app-preloader .app-csloader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80%;
+        width: 100%;
+        background: url(<%=VUE_APP_PUBLIC_PATH%>static/img/logo.png) no-repeat center;
+        background-size: 136px;
+      }
+
+      .app-preloader .app-csloader-inner {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        bottom: -10%;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+      }
+
+      .app-preloader .app-csloader-inner label {
+        font-size: 20px;
+        opacity: 0;
+        display: inline-block;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(1) {
+        -webkit-animation: lol 3s 0.5s infinite ease-in-out;
+        animation: lol 3s 0.5s infinite ease-in-out;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(2) {
+        -webkit-animation: lol 3s 0.4s infinite ease-in-out;
+        animation: lol 3s 0.4s infinite ease-in-out;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(3) {
+        -webkit-animation: lol 3s 0.3s infinite ease-in-out;
+        animation: lol 3s 0.3s infinite ease-in-out;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(4) {
+        -webkit-animation: lol 3s 0.2s infinite ease-in-out;
+        animation: lol 3s 0.2s infinite ease-in-out;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(5) {
+        -webkit-animation: lol 3s 0.1s infinite ease-in-out;
+        animation: lol 3s 0.1s infinite ease-in-out;
+      }
+
+      .app-preloader .app-csloader-inner label:nth-child(6) {
+        -webkit-animation: lol 3s infinite ease-in-out;
+        animation: lol 3s infinite ease-in-out;
+      }
+
+      @keyframes lol {
+        0% {
+          opacity: 0;
+          transform: translateX(-300px);
+        }
+
+        33% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        66% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: translateX(300px);
+        }
+      }
+    </style>
+    <script>
+      console.log('<%= VUE_APP_BUILD_INFO %>');
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%=VUE_APP_TITLE%> doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <div class="app-preloader">
+      <div class="app-csloader">
+        <div class="app-csloader-inner">
+          <label>●</label>
+          <label>●</label>
+          <label>●</label>
+          <label>●</label>
+          <label>●</label>
+          <label>●</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

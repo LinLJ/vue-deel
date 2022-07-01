@@ -1,0 +1,21 @@
+// It's highly recommended to change the default colors
+// to match your app's branding.
+
+$primary: #0079fe !default;
+$secondary: #4bd863;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+
+$positive: #21ba45;
+$negative: #ff3b30;
+$info: #31ccec;
+$warning: #fe9400;
+
+$separator-color: #e4e4e4;
+
+$layout-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+
+@import '~quasar-variables-styl';
+
+$button-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
