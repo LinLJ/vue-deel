@@ -8,9 +8,7 @@
         <el-select class="filter-item" v-model="listQuery.filters.themeId" @change="selectTheme" placeholder="请选择">
           <el-option v-for="item in themes" :key="item.id" :label="item.cnName" :value="item.id"></el-option>
         </el-select>
-        <el-button class="filter-item" type="primary" icon="el-icon-search" @click="fetchData" v-waves>
-          查询
-        </el-button>
+        <el-button class="filter-item" type="primary" icon="el-icon-search" @click="fetchData"> 查询 </el-button>
         <el-button class="filter-item" style="margin-left: 10px" icon="el-icon-refresh" @click="resetTemp">
           重置
         </el-button>

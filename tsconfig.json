@@ -21,6 +21,7 @@
       "@layout": ["src/layout"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"],
       "@mock": ["mock"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]

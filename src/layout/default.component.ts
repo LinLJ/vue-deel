@@ -35,13 +35,13 @@ export default Vue.extend({
       // this.menus = await MenuService.getNavs();
       this.menus = [];
 
-      if (process.env.NODE_ENV === 'development') {
-        // 生产环境不添加 `demo` 模块路由&菜单且不打包其模块文件
-        const demoMenus = require('@pages/demo').DEMO_MENUS;
-        if (demoMenus) {
-          this.menus = this.menus.concat(JSON.parse(JSON.stringify(demoMenus)));
-        }
+      // if (process.env.NODE_ENV === 'development') {
+      // 生产环境不添加 `demo` 模块路由&菜单且不打包其模块文件
+      const demoMenus = require('@pages/demo').DEMO_MENUS;
+      if (demoMenus) {
+        this.menus = this.menus.concat(JSON.parse(JSON.stringify(demoMenus)));
       }
+      // }
 
       this.$nextTick(() => {
         // 获取到菜单数据后验证一次当前路由权限

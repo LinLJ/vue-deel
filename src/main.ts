@@ -9,11 +9,11 @@ import 'element-ui/lib/theme-chalk/index.css';
 import $ from 'jquery';
 import jsPlumb from 'jsplumb';
 import VueCompositionAPI from '@vue/composition-api';
-import waves from '@pages/datax/directive/waves/index.js';
+// import waves from '@pages/datax/directive/waves/index.js';
 
 import { preloader } from '@tdp/theme';
 import { StartupService } from '@core';
-Vue.use(waves.install);
+// Vue.use(waves.install);
 
 Vue.prototype.$jsPlumb = jsPlumb.jsPlumb;
 Vue.use(VueCompositionAPI);

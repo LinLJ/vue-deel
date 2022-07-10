@@ -19,10 +19,10 @@ const addToFirstRoutes = (...routes: Array<RouteConfig[]>) => {
 // 添加默认布局子路由
 const addToChildRoutes = (...routes: Array<RouteConfig[]>) => {
   DEF_LAYOUT_CHILD_ROUTES.splice(0, 0, routes.flat());
-  if (process.env.NODE_ENV === 'development') {
-    // 生产环境不添加 `demo` 模块路由且不打包其模块文件
-    DEF_LAYOUT_CHILD_ROUTES.push(require('@pages/demo').default);
-  }
+  // if (process.env.NODE_ENV === 'development') {
+  //   // 生产环境不添加 `demo` 模块路由且不打包其模块文件
+  DEF_LAYOUT_CHILD_ROUTES.push(require('@pages/demo').default);
+  // }
   return DEF_LAYOUT_CHILD_ROUTES.flat();
 };
 
